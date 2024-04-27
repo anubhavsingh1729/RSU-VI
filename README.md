@@ -46,27 +46,27 @@ https://faubox.rrze.uni-erlangen.de/getlink/fi8Gr2BJugqAZDfF8LPjvi/deeplab_model
 ### link to test video:
 https://faubox.rrze.uni-erlangen.de/getlink/fi66Ra3Se2zFQg73kbNc7v/testvdo.mp4
 
-### link to output video of rsu_vi script (final task output):
+### link to output video of rsu_vi script:
 https://faubox.rrze.uni-erlangen.de/getlink/fi9ft66YXioUYuQxU65Wsi/sensationvdo.mp4
 
-### To run the generate_video_walk file:
+### run the generate_video_walk file to generate video with valhalla instructions:
 ```
 python3 generate_video_walk.py files/walking_video.mp4 edited_video.mp4
 
 ```
 
-### to run train.py file:
+### run train.py file to train deeplabv3 model on cityscape dataset:
 ```
 python3 train.py /path/to/training/images /path/to/training/labels /path/to/validation/images /path/to/validation/labels
 
 ```
-### to run training_pipeline.py file:
+### run training_pipeline.py file to finetune deeplabv3 segmentation model:
 ```
 python3 training_pipeline.py /path/to/training/images /path/to/training/labels /path/to/validation/images /path/to/validation/labels /path/to/deeplab_model
 
 ```
 
-### to run inference.py file:
+### run inference.py file to get Model IOU score:
 ```
 python3 inference.py /path/to/test/mapillary/images /path/to/test/mapillary/ground/truth/labels /path/to/model/output /path/to/deeplab_model
 
@@ -81,7 +81,7 @@ python3 convert_masks_to_grayscale.py /path/to/config.json /path/to/training/lab
 python3 sensation\helper\onnx_export.py --pytorch path\to\your\model --onnx path\to\your\onnx
 
 ```
-### to run rsu_vi.py file:
+### run rsu_vi.py file to get final video output with walking instructions:
 ```
 python3 rsu_vi.py /path/to/test/input/video.mp4 /path/to/testgps.gpx/file /path/to/output/video.mp4
 
